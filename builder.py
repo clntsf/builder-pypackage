@@ -41,7 +41,7 @@ def fill_fields(text: str, settings: dict):
 
 def populate_package_info_files(
         package_path: Path,
-        settings: dict[str, str|dict],
+        settings: dict,
     ):
 
     def write_to_dest(destpath: str, text: str):
