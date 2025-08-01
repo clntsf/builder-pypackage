@@ -53,4 +53,4 @@ def populate_package_info_files(
     write_to_dest("pyproject.toml", get_text(get_package_resource("pyproject.toml.sample")))
     write_to_dest("README.md", "")
     write_to_dest(".gitignore", "")
-    write_to_dest(f"src/{settings['package']}/__main__.py", "")
+    write_to_dest(f"src/{settings['package']['name']}/__main__.py", "")
